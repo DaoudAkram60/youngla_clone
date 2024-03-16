@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+html{
+    background-color: #efefef;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500 ;
+}
+header{
+    padding: 20px 75px;
+}
+img{
+    width: 215px;
+}
+nav{
+    font-size:1rem;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap : 15px;
+    list-style: none;
+}
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s transform ;
+}
+nav ul li a:hover{
+    color: #FF8C42;
+    transform: translateY(-2px);
+}
+
+.log{
+    margin-right: 15px;
+    padding-top: 10px;
+}
+.btn{
+    border: 0px  solid   #000;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    background-color: #ec6a19;
+    color: #efefef;
+    font-weight: 500;
+}
+
+.btn:hover{
+    color: #000000;
+    transform: scale(102.5%);
+}
+main{
+    padding: 0px 10px;
+    background-image: url("images/bg_2.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+.intro{
+    padding: 0px 235px;
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    padding: 125px 0px;
+    display: flex;
+    flex-flow:column ;
+    gap:20px
+}
+.div1 h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.model{
+    animation: slideup 1s 1s forwards ;
+    width: 350px ;
+    transform: translateY(500px);
+
+}
+
+/*Animation*/
+@keyframes slideup {
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.text{
+    animation: slideup 1s forwards;
+    transform: translateY(500px);
+}
+.text1{
+    animation: slideup 1s 0.25s forwards;
+    transform: translateY(500px);
+
+}
+.btn2{
+    animation: slideup 1s 0.5s forwards;
+    transform: translateY(500px);
+    display: inline-block;
+    border: 0px  solid   #000;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    background-color: #e46c22;
+    color: #efefef;
+    font-weight: 500;
+    width: 175px;
+    text-align: center;
+    transition: 0.4s transform !important ;
+}
+.btn2:hover{
+    color: #000000;
+    cursor: pointer;
+    transform: scale(102.5%) !important;
+}
+
